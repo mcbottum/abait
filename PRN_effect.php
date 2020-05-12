@@ -48,8 +48,8 @@ build_page($_SESSION['privilege'],$cgfirst);
 		$date=date('Y-m-d');
 		$date_start=date('Y-m-d',(strtotime('- 30 days')));	
 		//print"$date_start";
-		$title1='Thirty Minute Post PRN Response Report';
-		$title2='Residents Receiving PRNs Within the Last Thirty Days';
+		$title1='Thirty Minute Post Medicated Episode Response Report';
+		$title2='Listing of Medicated Episodes Within the Last Thirty Days';
 		#$residentkey=$_REQUEST['resident_choice'];
 
 		$conn=mysqli_connect($_SESSION['hostname'],$_SESSION['user'],$_SESSION['mysqlpassword'],$_SESSION['db']) or die(mysqli_error());

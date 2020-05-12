@@ -51,13 +51,13 @@ if($_SESSION['cgfirst']!=""){
 
 build_page($_SESSION['privilege'],$cgfirst);
 ?>
-<h3 align='center'><label>PRN Effect Report</label></h3>
+<h3 align='center'><label>Medication Effect Report</label></h3>
 
 <?
 	$episode_choice_rm=$_REQUEST['episode_choice_rm'];
 	$episode_choice=$_REQUEST['episode_choice'];
 	$post_PRN_observation=$_REQUEST['post_PRN_observation'];
-	if($post_PRN_observation=="Enter specific description of post PRN response in this yellow box."){
+	if($post_PRN_observation=="Enter specific description of response to medication here."){
 		$post_PRN_observation=null;
 	}
 	if($episode_choice_rm){
@@ -70,7 +70,7 @@ build_page($_SESSION['privilege'],$cgfirst);
 	if($post_PRN_observation){
 		print "<h4 align='center'>  The observation: <em> $post_PRN_observation</em> has been logged</h4>";
 	}else{
-		print "<br><em>An observation has not been logged.  Please return to the previous page and enter a post PRN behavior observation.</em></br>";
+		print "<br><em>An observation has not been logged.  Please return to the previous page and enter a post medicated behavior observation.</em></br>";
 	}
 	if(! $retval ){
 		die('Could not connect: ' . mysqli_error());
@@ -80,7 +80,7 @@ build_page($_SESSION['privilege'],$cgfirst);
 			print "<div id='submit'>";
 				print "<input	type = 'button'
 							name = ''
-							value = 'Log Another PRN Comment'
+							value = 'Log Another Comment'
 							onClick=\"backButton('PRN')\"/>\n";
 			print "</div>";
 		print "</li>";
