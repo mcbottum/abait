@@ -69,9 +69,9 @@ window.onload = function() {
 </head>
 <body>
 <?
-foreach (getallheaders() as $name => $value) {
-    echo "$name: $value\n";
-}
+#foreach (getallheaders() as $name => $value) {
+#    echo "$name: $value\n";
+#}
 <div id="body" class="shadow">
 <fieldset id='welcome' class="shadow">
 	<div id = "head">
@@ -80,7 +80,7 @@ foreach (getallheaders() as $name => $value) {
 	</div>
 </fieldset>
 		<form 	onsubmit='return formValidator()'
-				action = "agitationpasscheck.php" 
+				action = "ABAIT_passcheck_v2.php" 
 				method = "post">
 	<table class="center">
 		<tr>
