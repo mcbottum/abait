@@ -314,7 +314,7 @@ $r=0;
 					print "<tr><td align='center'><h3> Table Displays All Recorded $behavior Related Episodes to Date</h3></td></tr>\n";
 					print "<tr><td align='right'>";
 					?>
-					<input type='submit' value='Info' onClick="alert('Use the data presented in this table to create a Trigger/Intervention Scale for your resident.  Up to six interventions may be entered per trigger.  Trigger and intervention descriptions should be as brief though descriptive as possible (One to three word descriptors).');return false">
+					<input type='submit' value='Info' onClick="alert('Use the data presented in this table to create a Trigger/Intervention Scale for your resident.  Up to six interventions may be entered per trigger.  Trigger and intervention descriptions should be as brief though descriptive as possible (One to three word descriptors). NOTE: Please avoid using any resident identifying information such as NAMES or IDs.');return false">
 					<?	
 					print "</td></tr>";
 					print "<tr><td  align='center' style='color:red'><h4>Red Data Indicates Unscaled Behavior Recorded <em>After</em> Most Recent Scale Creation ($creation_date)</h4></td></tr>\n";
