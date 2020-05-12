@@ -48,9 +48,7 @@ build_page($_SESSION['privilege'],$cgfirst);
 ?>
 
 <div id = "head">
-<?
-print "Care Provider Home Page";
-?>
+    Carer Home Page   
 </div>
 
 <img class="datamap_home" id="datamap_home" src = "Caregiver_Buttons_wwhite.svg" ismap usemap="#datamap_home" style="border:none;"></a>
