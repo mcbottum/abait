@@ -1,4 +1,14 @@
 <?
+
+// foreach (getallheaders() as $name => $value) {
+//     echo "$name: $value\n";
+// }
+// redirect if remote sign in
+$a=getallheaders();
+if(array_key_exists("abait",$a)){
+	header('location: http://localhost:80/agitationpasscheck.php');
+	die;
+}
 session_start();
 ?>
 <!doctype html>
@@ -68,10 +78,7 @@ window.onload = function() {
 		href = "ABAIT_Home.css">
 </head>
 <body>
-<?
-foreach (getallheaders() as $name => $value) {
-    echo "$name: $value\n";
-}
+
 <div id="body" class="shadow">
 <fieldset id='welcome' class="shadow">
 	<div id = "head">
