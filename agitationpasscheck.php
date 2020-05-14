@@ -9,7 +9,9 @@
  		$remote_login_guid = Null;
  	}
  	// echo $remote_login_guid;
-session_start();?>
+session_start();
+include("auto_enroller.php");
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -70,8 +72,12 @@ $filename =$_REQUEST["submit"];
 		print(mysqli_num_rows($session1));
 		if($row1=mysqli_fetch_assoc($session1)){
 			$_SESSION['SITE']='ABAIT Home';
-			
-			if($row1['accesslevel']=='globaladmin'&&$row1['password']==$password){
+
+			if($row1['accesslevel']=='auto_update'&&$row1['password']==$password){
+				$updates=$_REQUEST['updates'];
+				autoEnroller($updates);
+			};
+			elseif($row1['accesslevel']=='globaladmin'&&$row1['password']==$password){
 				$_SESSION['adminfirst']=$row1['first'];
 				$_SESSION['adminlast']=$row1['last'];
 				$_SESSION['cgfirst'] = '';
