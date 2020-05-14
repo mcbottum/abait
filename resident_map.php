@@ -364,7 +364,7 @@ print"</div>";
 				<tr><td colspan='1' align='center'>
 						<div id = "trigger">
 						<h3 style='color: grey'>STEP 5</h3><h4>Any other unique comments about behavior?</h4>
-						<textarea placeholder="Required..." rows="4" cols="35" id ="specific_behavior_description" name = "specific_behavior_description"/></textarea>
+						<textarea placeholder="Required...Please avoid entering personal information" rows="4" cols="35" id ="specific_behavior_description" name = "specific_behavior_description"/></textarea>
 						</div>
 					</td>
 				</tr>
@@ -372,7 +372,7 @@ print"</div>";
 					<td colspan='1' align='center'>
 						<div id = "intervention">
 						<h3 style='color: grey'>STEP 6</h3><h4>How did you manage the episode?</h4>
-						<textarea placeholder="Required..." rows="4" cols="35" id ="intervention" name = "intervention"/></textarea>
+						<textarea placeholder="Required...Please avoid entering personal information" rows="4" cols="35" id ="intervention" name = "intervention"/></textarea>
 						</div>
 					</td>
 				</tr>
@@ -381,7 +381,7 @@ print"</div>";
 						<div id = "intervention_avoid">
 						<h3 style='color: grey'>STEP 7</h3><h4>Did anything make the behavior more severe?</h4><br>
 						<!-- <em style="font-size:10pt; line-height:0pt; color:red">Optional</em><br> -->
-						<textarea placeholder="Optional..." rows="4" cols="35" id ="interv_a" name = "intervention_avoid"/></textarea>
+						<textarea placeholder="Optional...Please avoid entering personal Information" rows="4" cols="35" id ="interv_a" name = "intervention_avoid"/></textarea>
 						</div>
 					</td>
 				</tr>
